@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT WebRTC Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>ChatGPT WebRTC Chat</h1>
+            <div class="audio-status">
+                <span id="micStatus">🎤</span>
+                <span id="peerStatus">🔊</span>
+            </div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be added here -->
+        </div>
+        <div class="chat-input">
+            <textarea id="userInput" placeholder="Type your message or click the button to record audio..."></textarea>
+            <button id="sendButton">Start Recording</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
